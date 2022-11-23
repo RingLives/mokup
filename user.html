@@ -146,27 +146,47 @@
                                 <div class="accordion-box">
                                     <div class="panel-group" id="SettingTabs">
                                         <div class="panel panel-default">
-                                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" >
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link">
-                                                        <i class="nav-icon fas fa-chart-pie"></i>
-                                                        <p>General Settings<i class="right fas fa-angle-left"></i></p>
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class=" " data-toggle="collapse" data-parent="#SettingTabs"
+                                                        href="#general_settings">
+                                                        General Settings
                                                     </a>
-
-                                                    <ul class="nav nav-treeview" style="display: none;">
-                                                        <li class="nav-item active">
-                                                            <a href="#general" data-toggle="tab" class="nav-link">General</a>
+                                                </h4>
+                                            </div>
+    
+                                            <div id="general_settings" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <ul class="accordion-tab nav nav-tabs">
+                                                        <li class="">
+                                                            <a href="#general" data-toggle="tab">General</a>
                                                         </li>
                                                         <li class="nav-item">
                                                             <a href="#maintenance" data-toggle="tab"
-                                                                aria-expanded="true" class="nav-link">Maintenance</a>
+                                                                aria-expanded="true">Maintenance</a>
+                                                        </li>
+                                                        <li class="nav-item active">
+                                                            <a href="#store" data-toggle="tab"
+                                                                aria-expanded="true">Store</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a href="#store" data-toggle="tab" aria-expanded="true" class="nav-link">Store</a>
+                                                            <a href="#currency" data-toggle="tab">Currency</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#sms" data-toggle="tab">SMS</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#mail" data-toggle="tab">Mail</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#newsletter" data-toggle="tab">Newsletter</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#custom_css_js" data-toggle="tab">Custom CSS/JS</a>
                                                         </li>
                                                     </ul>
-                                                </li>
-                                            </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -3377,7 +3397,7 @@
     <!-- AdminLTE for demo purposes -->
     <!-- <script src="dist/js/demo.js"></script> -->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <!-- <script src="dist/js/pages/dashboard.js"></script> -->
+    <script src="dist/js/pages/dashboard.js"></script>
 </body>
 
 </html>
